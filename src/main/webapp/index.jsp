@@ -12,7 +12,7 @@
 </head>
 <body>
 <p>Dzisiaj jest: <%
-    final LocalDate now = LocalDate.now();
+    final LocalDate now = java.time.LocalDate.now();
     out.print(now);
 %></p>
 </body>
