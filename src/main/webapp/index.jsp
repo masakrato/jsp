@@ -1,5 +1,5 @@
-
-  Created by IntelliJ IDEA.
+<%@ page import="java.time.LocalDate" %>
+Created by IntelliJ IDEA.
   User: Acer
   Date: 01.03.2020
   Time: 10:34
@@ -12,7 +12,7 @@
 </head>
 <body>
 <p>Dzisiaj jest: <%
-    final java.time.LocalDate now = java.time.LocalDate.now();
+    final LocalDate now = LocalDate.now();
     out.print(now);
 %></p>
 </body>
