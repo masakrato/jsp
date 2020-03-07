@@ -19,5 +19,7 @@ public class HelloWorldServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         final PrintWriter writer = response.getWriter();
         writer.println("Hello World");
+
+        response.sendRedirect("home.jsp");
     }
 }
