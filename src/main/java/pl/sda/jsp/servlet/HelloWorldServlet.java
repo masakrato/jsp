@@ -23,7 +23,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 //        response.sendRedirect("home.jsp");
         RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
-        dispatcher.forward(request, response);
+        dispatcher.include(request, response);
     }
 
 }
